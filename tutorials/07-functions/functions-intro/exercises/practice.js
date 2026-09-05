@@ -13,6 +13,12 @@
     Then, invoke the function once below its declaration.
 */
 
+function greetCrew () {
+    console.log("Welcome back, Captain.");
+}
+
+greetCrew ();
+
 /** EXERCISE 2: LIFE SUPPORT BOOST **/
 
 /*
@@ -20,6 +26,10 @@
     Inside, log "Pumping extra oxygen into sectors A-D... Done."
     Do not call it yet.
 */
+
+function activateOxygenBoost () {
+    console.log("Pumping extra oxygen into sectors A-D... Done.");
+}
 
 /** EXERCISE 3: TRIGGERING THE PROTOCOL **/
 
@@ -30,6 +40,10 @@ let crewIsSleepy = true;
     is true. If it is, invoke the 'activateOxygenBoost' function 
     you created in Exercise 2.
 */
+
+if (crewIsSleepy) { 
+    activateOxygenBoost();
+}
 
 /** EXERCISE 4: SEQUENTIAL AUTOMATION **/
 
@@ -45,3 +59,6 @@ function clearLaunchPad() {
     TODO: Call 'clearLaunchPad' first, and then call 'startEngines' 
     immediately after to ensure a safe, sequential liftoff.
 */
+
+clearLaunchPad();
+startEngines();
