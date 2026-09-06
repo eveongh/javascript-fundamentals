@@ -14,7 +14,21 @@
     3. Recursive Case: Call 'launchCountdown' with seconds - 1.
 */
 
+function launchCountdown(seconds) {
+    //base case 
+     if (seconds === 0) {
+        console.log("Ignition!"); 
+        return; 
+    }
+    //action 
+    console.log (`T-minus ${seconds}`);
+
+    //recursive case
+    launchCountdown(seconds -1);
+}
 // TODO: Call the function, starting at 3 seconds
+
+launchCountdown(3);
 
 /** EXERCISE 2: ICE EXTRACTION DEPTH-CHECK **/
 
@@ -25,7 +39,24 @@
     3. Recursive Case: Call 'drillForIce', increasing currentDepth by 5.
 */
 
+function drillForIce(currentDepth, targetDepth){
+    //base case
+    if (currentDepth >= targetDepth) {
+        console.log("Water ice vein reached!"); 
+        return; 
+    }
+
+    //action 
+    console.log(`Drilling... currently at ${targetDepth} meters.`)
+
+    //recursive case
+    drillForIce(currentDepth+5 , targetDepth)
+
+}
+
 // TODO: Call the function, starting with a current depth of 0 and target depth of 15
+
+drillForIce(0,15);
 
 /** EXERCISE 3: REPAIRING THE RECURSIVE LOOP **/
 
