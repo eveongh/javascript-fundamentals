@@ -46,9 +46,10 @@ for (let i = 0; i < fuelPods.length; i++) {
 
 // DEMO: Log temporaryCalculation to the console on the line below. What happens?
 
-// DEMO: Make a git commit!
+// DEMO: Make a git commit! 
 
 /* 
     Follow up with additional exercises after demo for hands-on practice 
     with problem-solving and coding!
 */
+  
