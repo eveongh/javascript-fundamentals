@@ -65,4 +65,17 @@ drillForIce(0,15);
     Fix the code so that it correctly stops when fuel hits 0.
 */
 
+function consumeThrusterFuel(fuelAmount) {
+	// FIX: Added the base case to stop the recursion
+	if (fuelAmount <= 0) {
+		console.log("Thruster depleted. Burn complete.");
+		return;
+	}
+
+	console.log(`Burning thrusters... Fuel left: ${fuelAmount} t`);
+	consumeThrusterFuel(fuelAmount - 10);
+}
+
 // TODO: Call the function, starting with a fuel amount of 30t
+
+consumeThrusterFuel(30);
