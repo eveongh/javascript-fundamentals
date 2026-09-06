@@ -15,5 +15,23 @@
        again with the new velocity. Then, RETURN 1 + that recursive result.
 */
 
+function calculateHoursToDecay(currentVelocity, threshold){
+   //base case
+   if (currentVelocity <= threshold) {
+   return 0;
+   }
+
+   //action
+   let newVelocity = currentVelocity*0.9;
+
+   //recursive case
+   return 1 + calculateHoursToDecay(newVelocity,threshold);
+
+}
+
+
 // TODO: Starting at 80 km/h, count the hours until it hits 50 km/h,
 // then print a sentence with that total to the console.
+
+let hoursRequired = calculateHoursToDecay(80,50);
+console.log(`Orbit will decay to safe speeds in ${hoursRequired} hours.`)
