@@ -34,4 +34,4 @@ function calculateHoursToDecay(currentVelocity, threshold){
 // then print a sentence with that total to the console.
 
 let hoursRequired = calculateHoursToDecay(80,50);
-console.log(`Orbit will decay to safe speeds in ${hoursRequired} hours.`)
+console.log(`Orbit will decay to safe speeds in ${hoursRequired} hours.`)   
